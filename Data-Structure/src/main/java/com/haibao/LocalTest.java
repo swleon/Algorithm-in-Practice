@@ -12,6 +12,29 @@ public class LocalTest {
 
 
     /**
+     * 测试 数组栈
+     */
+    @Test
+    public void testArrayStack(){
+
+      ArrayStack<Integer> arrayStack = new ArrayStack();
+        for (int i = 0; i < 5; i++) {
+            arrayStack.push(i);
+        }
+
+        System.out.println(arrayStack.toString());
+
+        int size = arrayStack.getSize();
+        for (int i = 0; i < size; i++) {
+            arrayStack.pop();
+            System.out.println(arrayStack.toString());
+        }
+
+    }
+
+
+
+    /**
      * 测试数组
      */
     @Test
