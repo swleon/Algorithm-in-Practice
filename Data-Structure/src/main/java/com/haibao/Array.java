@@ -104,6 +104,22 @@ public class Array<T> {
         return false;
     }
 
+    public T get(int index){
+        if(index < 0 || index >= size){
+          throw new IllegalArgumentException("Get faild. Index is Illegal.");
+        }
+        return data[index];
+    }
+
+    public T getFirst(){
+        return get(0);
+    }
+
+    public T getLast(){
+        return get(size -1);
+    }
+
+
     /**
      * 查找是否存在元素e，并返回元素e的索引
      * 如果不存在，返回-1

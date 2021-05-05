@@ -1,22 +1,21 @@
 package com.haibao;
 
+import org.junit.jupiter.api.Test;
+
 /**
  *  测试
  *
  * @author ml.c
  * @date 19:07 PM 4/22/21
  **/
-public class Main {
-
-    public static void main(String[] args) {
-        testArray();
-    }
+public class LocalTest {
 
 
     /**
      * 测试数组
      */
-    public static void testArray(){
+    @Test
+    public void testArray(){
 
         Array array = new Array(20);
         for (int i = 0; i < 10; i++) {
